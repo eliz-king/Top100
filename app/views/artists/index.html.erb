@@ -1,2 +1,11 @@
 <h1>Artists/h1>
-<%=  %>
+<%= link_to 'add artist', new_artist_path %>
+<hr/>
+<h2><%= @artists.length <= 0 ? "No Artist" : "" %></h2>
+<ul>
+  <% @artists.each do |artist| %>
+  <li>
+    <%= link_to artist.name, artist %>
+  </li>
+  <% end %>
+</ul>

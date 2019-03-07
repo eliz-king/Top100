@@ -1,0 +1,16 @@
+<nav>
+  <ul>
+    <li>
+      <%= link_to 'Artists', artists_path %>
+    </li>
+    <li>
+      <%= link_to 'Add an Artist', new_artist_path %>
+    </li>
+    <li>
+      <%= link_to 'Songs', artist_songs_path(:songs) %>
+    </li>
+    <li>
+      <%= link_to 'Add a Song', new_artist_song_path(:artist_id) %>
+    </li>
+  </ul>
+</nav>
